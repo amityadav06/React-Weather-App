@@ -1,0 +1,81 @@
+.top-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Oxygen,sans-serif;
+  align-items: center;
+//  background-color: #445a71;  // #22273e;
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  .title{
+    color:#fff;
+    font-size: 35px;
+    margin-top: 2px;
+  }
+}
+
+.weather-container{
+   color: #fff;
+   margin-top: 0.8em;
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .inner-container{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: center;
+    margin:3px 0;
+    align-items: center;
+
+    .current-weather{
+      height: fit-content;
+      font-size: 60px;
+      margin-left: 12px;
+      font-weight:200;
+    }
+
+    .image{
+      margin-left: 15px;
+      width: 3em;
+      height: 3em;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+    }
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    //color:#e6e65a;
+    padding-top: 10px;
+    padding-left: 5px;
+    line-height: 25px;
+    letter-spacing: 0.1px; 
+  }
+}
+
+.btn-select-location{
+  background-color:#c0c0c0;                               // #49dcc2;
+  font-size: 11.7px;
+  font-family: Roboto, sans-serif;
+  border-radius: 2px;
+  color: #000000;
+  font-weight:bold;
+  margin-right: 4px;
+}

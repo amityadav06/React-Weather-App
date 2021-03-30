@@ -1,0 +1,136 @@
+*{
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root
+{
+width:100%;
+height:100%;
+}
+
+.whole-container{
+
+    .headerdash{
+      display: flex;
+      flex-direction:row;
+      color:#fff;
+      height:38px;
+      width: 500px;
+        .headimage{
+          width: 42px;
+          height: 100%;
+          background-image: url('../resources/images/globe1.png');
+          background-repeat: no-repeat;
+          border: 0.5px solid #999;
+          border-radius: 20px;
+          margin-right: 8px;
+          @keyframes headimage {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+
+        }
+        .headtext{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    }
+
+.app-container{
+
+  .text-container{
+    margin-bottom: 430px;
+    width:70%;
+    height:100%;
+    display: flex;
+    float: left;
+    color: #1e90ff;
+  .text-section{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 60px;
+     font-weight: 600;
+     margin-right: 70px;
+    }
+  }
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(180deg, #1667c4 0%, rgba(58, 98, 104, 0.57) 40%),
+  url('../resources/images/im3.jpg') center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-container{
+   box-shadow: 0px 0px 6px 1px rgb(0,139,139);
+   min-width: 390px;
+   height: 650px;
+   display: flex;
+   flex-direction: column;
+  // border: 0.5px solid #999;
+   border-radius: 4px;
+
+   .top-section{
+     flex: 0 0 70%;
+   }
+
+   .bottom-section{
+     flex: 0 0 23%;
+   }
+  }
+}
+// my cloudcover
+   .whole-footer{
+     height: 800px;
+     width: 100%;
+  }
+}
+
+
+
+
+.btn{
+  width: 11.1em;;
+  border: 1px solid #ddd;
+  margin: 14px 0;
+  cursor: pointer;
+  &:focus{
+    outline: none;
+  }
+
+}
+  .popup-container{
+  top: 110px;
+  width: 8.5em;
+  display: flex;
+  height:4.8em;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 0px 7px 0.5px rgb(15,15,0.5);
+  position: absolute;
+  will-change: transform;
+  transform: translate3d(487px,187px,0px);
+
+    .form-container{
+      padding: 4px;
+      width: 100%;
+      label{
+        font-size: 13px;
+      }
+      input{
+        width: 9em;
+        border-radius: 2px;
+        border: 1px solid rgba(15,15,15,0.2)
+      }
+   }
+}
